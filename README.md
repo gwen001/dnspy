@@ -68,11 +68,11 @@ optional arguments:
 
 (screenshots after holidays)  
 
-[?] - unknown service
-[YELLOW] - there is something weird (doubt) but mostly not takeoverable
-[GREEN] - possible takeover
-[PINK] - takeover confirmed with an additional check
-[RED] - warning, this service deserve a manual check (like S3 bucket permissions)
+[?] - unknown service  
+[YELLOW] - there is something weird (doubt) but mostly not takeoverable  
+[GREEN] - possible takeover  
+[PINK] - takeover confirmed with an additional check  
+[RED] - warning, this service deserve a manual check (like S3 bucket permissions)  
 
 Whatever the color, manual check is always a good idea and should always be performed before sending a report.  
 
