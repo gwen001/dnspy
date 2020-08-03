@@ -513,7 +513,7 @@ def print_debug( msg ):
 
 
 parser = argparse.ArgumentParser()
-parser.add_argument( "-s","--source",help="source file (masscan output)" )
+parser.add_argument( "-s","--source",help="source file (masscan output using format: -o Sqnr)" )
 parser.add_argument( "-f","--fingerprints",help="fingerprints file" )
 parser.add_argument( "-r","--reresolve",help="force reresolve", action="store_true" )
 parser.add_argument( "-v","--verbose",help="verbose mode, 0:only vulnerable (default), 1:include unknown services and doubt, 2:include ignored and not vulnerable, 3:debug" )

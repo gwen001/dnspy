@@ -54,7 +54,7 @@ usage: interpreter.py [-h] [-s SOURCE] [-f FINGERPRINTS] [-r] [-v VERBOSE]
 optional arguments:
   -h, --help            show this help message and exit
   -s SOURCE, --source SOURCE
-                        source file (masscan output)
+                        source file (masscan output using format: -o Sqnr)
   -f FINGERPRINTS, --fingerprints FINGERPRINTS
                         fingerprints file
   -r, --reresolve       force reresolve
