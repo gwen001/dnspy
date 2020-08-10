@@ -45,7 +45,7 @@ Feel free to customize it or write your own.
 The ```daemon_resolver.py``` basically run ```massdns``` (so you better have it installed in your system) and feed the interpreter queue file.  
 
 The ```daemon_interpreter.py``` will read the massdns output file and check for subdomains takeover by running ```interpreter.py```.
-This script is **strongly** inspired of ```subjack``` but I added some features like the ignore list and also improved the fingerprints.
+This script is **strongly** inspired of ```subjack``` but I added some features like the ignore list and also improved the fingerprints with regexp.
 Feel free to add your own signatures.  
 
 ```
@@ -99,15 +99,15 @@ ex: cloudfront...
 resolution response: ?  
 ex: fastly...  
 
-3/ subdomain points to a 3rd party service but is a A or AAAA record
+3/ subdomain points to a 3rd party service but is a A or AAAA record  
 resolution response: ipv4 or ipv6
 ex: ?  
 
-4/ subdomain is an alias to a domain which doesn't belong to anyone, buy it!
+4/ subdomain is an alias to a domain which doesn't belong to anyone, buy it!  
 resolution response: NXDOMAIN  
 
 
-# TODO
+# Todo
 
 - http requests to solve case 3/
 - screenshots
