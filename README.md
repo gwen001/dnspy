@@ -100,7 +100,7 @@ resolution response: ?
 ex: fastly...  
 
 3/ subdomain points to a 3rd party service but is a A or AAAA record  
-resolution response: ipv4 or ipv6
+resolution response: ipv4 or ipv6  
 ex: ?  
 
 4/ subdomain is an alias to a domain which doesn't belong to anyone, buy it!  
