@@ -3,15 +3,6 @@
 Find subdomain takeovers.
 
 
-# Warning
-
-This repository is not public yet.
-If you get access it means that you're part of the GitHub sponsors program.
-For now, you're not allowed to release it, publish it or give access to anyone else.
-
-Please remember that this program is still under development, bugs and changes may occur.
-
-
 # Install
 
 ```
@@ -19,6 +10,7 @@ git clone https://github.com/gwen001/dnspy
 cd dnspy
 pip3 install -r requirements.txt
 ```
+
 
 # How does it work
 
