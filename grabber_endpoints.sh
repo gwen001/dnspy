@@ -18,7 +18,7 @@ fi
 
 domain="$1"
 domain_url="https://$1"
-domain_dir="./$domain"
+domain_dir="domains/$domain"
 
 if [ ! -d $domain_dir ] ; then
     mkdir -p $domain_dir
