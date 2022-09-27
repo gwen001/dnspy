@@ -166,9 +166,11 @@ echo
 
 echo "## ONEFORALL ######" >&2
 o_oneforall="hosts_oneforall"
+# python3.6 /opt/bin/oneforall.py --target "$domain" --path ./oneforall/ --brute True --req True run
 python3.6 /opt/bin/oneforall.py --target "$domain" --path ./oneforall/ --brute True --req True run
 if [ -d oneforall ] ; then
-  mv ./oneforall/*.txt $o_oneforall
+#   mv ./oneforall/*.txt $o_oneforall
+  cat ./oneforall/*.csv  | cut -d "," -f 6 > $o_oneforall
 fi
 wc -l $o_oneforall >&2
 echo
@@ -203,7 +205,7 @@ if [ -f hosts ] ; then
 fi
 echo
 
-echo "## CLEAN ALTS AND MERGE ######" >&2
+echo "## CLEAN AND MERGE ######" >&2
 cat hosts >> alt_hosts
 cat alt_* | sort -fu >> altdns
 wc -l altdns >&2
