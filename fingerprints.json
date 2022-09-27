@@ -1,6 +1,18 @@
 {
     "services": [
         {
+            "name": "flywheel",
+            "cname": [
+                "\\.flywheelsites\\.com$"
+            ],
+            "fingerprint": [
+                "We're sorry, you've landed on a page that is hosted by Flywheel",
+                "Oops! That's not the site"
+            ],
+            "warning": false,
+            "nxdomain": false
+        },
+        {
             "name": "hatenablog",
             "cname": [
                 "\\.dontknowyet\\.noidea$"
@@ -1142,6 +1154,12 @@
         "qwant\\.com$",
         "cdxcn\\.cn$",
         "ahdss\\.net$",
-        "zillowgroup\\.com"
+        "zillowgroup\\.com",
+        "\\.bluewin.ch$",
+        "\\.cyon.ch$",
+        "\\.ellb.ch$",
+        "\\.nine.ch$",
+        "\\.swisscom.ch$",
+        "\\.swisscom.com$"
     ]
 }
