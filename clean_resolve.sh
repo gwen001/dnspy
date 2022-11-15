@@ -23,6 +23,5 @@ tmp_file="/tmp/$(date '+%s')"
 
 sed -i -E "s/^[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}:[0-9]{1,3}[[:space:]]+[0-9]+[[:space:]]+//g" $resolve_file
 sed -i -E "s/\.[[:space:]]+A$//g" $resolve_file
-egrep "NXDOMAIN|NOERROR|SERVFAIL|CNAME" $resolve_file > $tmp_file
+egrep "NXDOMAIN|NOERROR|SERVFAIL|CNAME|REFUSED" $resolve_file > $tmp_file
 mv $tmp_file $resolve_file
- 

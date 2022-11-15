@@ -189,6 +189,7 @@ echo "## HUGE BRUTE FORCE ######" >&2
 o_hugebf="alt_hugebf"
 cat "$(pwd)/../../EnormousDNS.txt" | awk -v dom="$domain" '{print $1"."dom}' > $o_hugebf
 wc -l $o_hugebf >&2
+
 echo
 
 echo "## ALTDNS ######" >&2

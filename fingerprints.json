@@ -1,6 +1,18 @@
 {
     "services": [
         {
+            "name": "wix",
+            "cname": [
+                "\\.wixdns\\.net$"
+            ],
+            "fingerprint": [
+                "Error ConnectYourDomain occurred",
+                "wixErrorPagesApp"
+            ],
+            "warning": false,
+            "nxdomain": false
+        },
+        {
             "name": "flywheel",
             "cname": [
                 "\\.flywheelsites\\.com$"
@@ -31,7 +43,8 @@
             ],
             "fingerprint": [
                 "Job Board Is Unavailable",
-                "This job board website is either expired"
+                "This job board website is either expired",
+                "This job board website is either expired or its domain name is invalid."
             ],
             "warning": false,
             "nxdomain": false
@@ -146,7 +159,8 @@
             ],
             "fingerprint": [
                 "Company Not Found",
-                "Sorry, but the website you"
+                "Sorry, but the website you",
+                "you&rsquo;re looking for doesn&rsquo;t exist"
             ],
             "warning": false,
             "nxdomain": false
@@ -182,7 +196,8 @@
                 "\\.ngrok\\.io$"
             ],
             "fingerprint": [
-                "ngrok.io not found"
+                "ngrok.io not found",
+                "Tunnel *.ngrok.io not found"
             ],
             "warning": false,
             "nxdomain": false
@@ -294,10 +309,13 @@
         {
             "name": "github",
             "cname": [
-                "\\.github\\.io$"
+                "\\.github\\.io$",
+                "\\.github\\.com$",
+                "\\.githubapp\\.com$"
             ],
             "fingerprint": [
-                "There isn't a GitHub Pages site here"
+                "There isn't a GitHub Pages site here",
+                "For root URLs (like http://example.com/) you must provide an index.html file"
             ],
             "warning": false,
             "nxdomain": false
@@ -350,10 +368,12 @@
         {
             "name": "tumblr",
             "cname": [
-                "domains\\.tumblr\\.com$"
+                "\\.tumblr\\.com$",
+                "\\.txmblr\\.com$"
             ],
             "fingerprint": [
-                "Whatever you were looking for doesn't currently exist at this address"
+                "Whatever you were looking for doesn't currently exist at this address",
+                "There's nothing here."
             ],
             "warning": false,
             "nxdomain": false
@@ -361,7 +381,8 @@
         {
             "name": "wordpress",
             "cname": [
-                "\\.wordpress\\.com$"
+                "\\.wordpress\\.com$",
+                ".wordpress.com</em> doesn&#8217;t&nbsp;exist"
             ],
             "fingerprint": [
                 "Do you want to register"
@@ -441,7 +462,9 @@
                 "\\.myshopify\\.com$"
             ],
             "fingerprint": [
-                "Sorry, this shop is currently unavailable"
+                "To finish setting up your new web address, go to your domain settings, click \"Connect existing domain\"",
+                "Sorry, this shop is currently unavailable",
+                "shop-not-found"
             ],
             "warning": false,
             "nxdomain": false
@@ -465,7 +488,9 @@
                 "\\.tilda\\.ws$"
             ],
             "fingerprint": [
-                "Domain has been assigned"
+                "Domain has been assigned",
+                "<title>Please renew your subscription</title>",
+                "Please go to the site settings and put the domain name in the Domain tab."
             ],
             "warning": false,
             "nxdomain": false
@@ -1006,7 +1031,6 @@
         "\\.fti\\.net$",
         "geotab.com",
         "github.net",
-        "github.com",
         "google.com",
         "twttr.net",
         "kaspersky.com",

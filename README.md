@@ -83,11 +83,11 @@ Manually launch the interpreter using ```qinterpreter2.sh``` so the ouput will b
 resolution response: most of the time CNAME but sometimes NXDOMAIN  
 ex: xxxxxx.azurewebsites.com, xxxx.s3.amazonaws.com, xxxx.herokuapp.com...  
 
-2.1/ subdomain uses 3rd party service/DNS but the domain isn't claimed on the service  
+2.1/ subdomain uses 3rd party service but the domain isn't claimed on the service  
 resolution response: ?  
 ex: cloudfront...
 
-2.2/ subdomain uses 3rd party DNS but the domain isn't claimed on the service
+2.2/ subdomain uses 3rd party DNS but the domain isn't claimed on the service  
 resolution response: ?  
 ex: fastly...  
 
@@ -111,3 +111,12 @@ resolution response: NXDOMAIN
 
 Feel free to ping me on Twitter if you have any problem to use the script.  
 https://twitter.com/gwendallecoguic
+
+
+
+
+---
+
+I don't believe in license.  
+You can do whatever you want with this program.
+
