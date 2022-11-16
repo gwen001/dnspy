@@ -2,7 +2,7 @@
 
 <h4 align="center">Find subdomain takeovers.</h4>
 
-<p align="left">
+<p align="center">
     <img src="https://img.shields.io/badge/-bash-gray" alt="bash badge">
     <img src="https://img.shields.io/badge/python-v3-blue" alt="python badge">
     <img src="https://img.shields.io/badge/license-MIT-green" alt="MIT license badge">
