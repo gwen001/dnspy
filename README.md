@@ -112,5 +112,5 @@ resolution response: NXDOMAIN
 ---
 
 Feel free to ping me on Twitter if you have any problem to use the script.  
-https://twitter.com/gwendallecoguic
+<a href="https://twitter.com/gwendallecoguic"><img src="https://img.shields.io/twitter/follow/gwendallecoguic.svg?logo=twitter"></a>
 
