@@ -1,7 +1,12 @@
+<p align="left">
+    <img src="https://img.shields.io/badge/python-v3-blue" alt="python badge">
+    <img src="https://img.shields.io/badge/license-MIT-green" alt="MIT license badge">
+    <a href="https://twitter.com/intent/tweet?text=https%3a%2f%2fgithub.com%2fgwen001%2fdnspy%2f" target="_blank"><img src="https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2Fgwen001%2Fdnspy" alt="twitter badge"></a>
+</p>
+
 # dnspy
 
 Find subdomain takeovers.
-
 
 # Install
 
@@ -10,7 +15,6 @@ git clone https://github.com/gwen001/dnspy
 cd dnspy
 pip3 install -r requirements.txt
 ```
-
 
 # How does it work
 
@@ -68,14 +72,12 @@ optional arguments:
 
 Whatever the color, manual check is always a good idea and should always be performed before sending a report.  
 
-
 # Recommandations
 
 Use this script on a dedicated server with a good connection.
 Use screen or tmux so even if you're disconnected the daemons will still run in the background.
 
 Manually launch the interpreter using ```qinterpreter2.sh``` so the ouput will be nicely displayed and you will be able to customize the fingerprints the way you like.
-
 
 # Takover cases
 
@@ -98,7 +100,6 @@ ex: ?
 4/ subdomain is an alias to a domain which doesn't belong to anyone, buy it!  
 resolution response: NXDOMAIN  
 
-
 # Todo
 
 - http requests to solve case 3/
@@ -111,12 +112,4 @@ resolution response: NXDOMAIN
 
 Feel free to ping me on Twitter if you have any problem to use the script.  
 https://twitter.com/gwendallecoguic
-
-
-
-
----
-
-I don't believe in license.  
-You can do whatever you want with this program.
 
