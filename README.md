@@ -108,8 +108,7 @@ resolution response: NXDOMAIN
 - find a more appropriate name
 - ?
 
-
 ---
 
-Feel free to [open an issue](/../../issues/) if you have any problem to use the script.  
+Feel free to [open an issue](/../../issues/) if you have any problem with the script.  
 
