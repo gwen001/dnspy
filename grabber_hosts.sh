@@ -185,6 +185,29 @@ cat hosts_* | sort -fu >> hosts
 wc -l hosts >&2
 echo
 
+
+echo "## AFTER RECON TOOLS ######" >&2
+o_subzuf="hosts_subzuf"
+cat hosts | subzuf.py $domain --output "$domain.subzuf"
+cat "$domain.subzuf" | jq ".[].domain" | tr -d '"' | sort -f > "$o_subzuf"
+echo
+
+o_regulator="hosts_regulator"
+python3.8 /opt/regulator/main.py "$domain" hosts "$domain.rules"
+cat "$domain.rules" | python3.8 /opt/regulator/generator.py | sed -E 's/\.{2,}/./g' | sort -fu | grep -vE '(\._|_\.|\-\.|\.\-|_\-|\-_)' > "$o_regulator"
+echo
+
+
+echo "## BUILDING LAST HOSTS FILE ######" >&2
+ls -1 hosts_* | while read f
+do
+    clean $f $domain
+done
+cat hosts_* | sort -fu >> hosts
+wc -l hosts >&2
+echo
+
+
 echo "## HUGE BRUTE FORCE ######" >&2
 o_hugebf="alt_hugebf"
 cat "$(pwd)/../../EnormousDNS.txt" | awk -v dom="$domain" '{print $1"."dom}' > $o_hugebf
